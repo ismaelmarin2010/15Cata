@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis XV Años - Invitación</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="script/script.js"></script>
+
+    <!-- Fuente elegante (similar al estilo Invitio) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <img src="images/hero.jpeg" alt="Foto principal" class="hero-img">
+        <div class="hero-content">
+            <h1 class="hero-title">Mis XV Años</h1>
+            <p class="hero-subtitle">Catalina</p>
+            <p class="hero-date">06 Febrero 2026</p>
+        </div>
+    </header>
+
+    <!-- SOBRE LA QUINCEAÑERA -->
+    <section class="section about">
+        <h2 class="section-title">Te invito a celebrar conmigo</h2>
+        <p class="section-text">
+            Con enorme alegría quiero invitarte a celebrar mis XV años. Será una noche única
+            llena de emociones, familia, amigos y momentos inolvidables. ¡Te espero!
+        </p>
+        <img src="images/about.jpeg" alt="Foto sobre mí" class="about-img">
+
+        <!-- AQUI VA EL CONTADOR -->
+        <div id="countdown-section" class="countdown-wrapper">
+          <h3 class="countdown-title">Cuenta regresiva para la gran noche</h3>
+
+          <div id="countdown">
+              <div class="time-box">
+                  <span id="days">00</span>
+                  <p>Días</p>
+              </div>
+              <div class="time-box">
+                  <span id="hours">00</span>
+                  <p>Horas</p>
+              </div>
+              <div class="time-box">
+                  <span id="minutes">00</span>
+                  <p>Minutos</p>
+              </div>
+              <div class="time-box">
+                  <span id="seconds">00</span>
+                  <p>Segundos</p>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- DETALLES DEL EVENTO -->
+    <!-- <section class="section event-details">
+        <h2 class="section-title">Detalles del Evento</h2>
+
+        <div class="details-grid">
+            <div class="detail-card">
+                <img src="images/icon-party.png" alt="Icono fiesta">
+                <h3>Fiesta</h3>
+                <p>21 hs</p>
+            </div>
+
+            <div class="detail-card">
+                <img src="images/icon-dresscode.png" alt="Código de vestimenta">
+                <h3>Código de Vestimenta</h3>
+                <p>[Elegante / Formal / Semi-formal]</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ITINERARIO -->
+    <!-- <section class="section itinerary">
+        <h2 class="section-title">Itinerario</h2>
+
+        <ul class="timeline">
+            <li><span class="time">18:00</span> Ceremonia</li>
+            <li><span class="time">20:00</span> Recepción</li>
+            <li><span class="time">21:00</span> Cena</li>
+            <li><span class="time">00:00</span> Baile y fiesta</li>
+        </ul>
+    </section> -->
+
+    <!-- UBICACIÓN -->
+    <section class="section location">
+        <h2 class="section-title">Ubicación</h2>
+        <p class="section-text"><strong>Salón Majesty</strong><br>Alsina 769, X5105 Villa Allende</p>
+        <div class="map-container">
+            <!-- Puedes reemplazar por tu iframe real -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6816.879954969357!2d-64.29076899999998!3d-31.29601400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329d1d4580872d%3A0xc5cf10bf2afa5d2b!2sSalon%20MAJESTY!5e0!3m2!1ses-419!2sar!4v1764560237331!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="section rsvp">
+        <h2 class="section-title">Confirmá tu asistencia</h2>
+        <form id="rsvpForm" class="rsvp-form">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" required>
+
+            <label for="guests">Cantidad de acompañantes</label>
+            <input type="number" id="guests" min="0" value="0">
+
+            <label for="message">Mensaje (opcional)</label>
+            <textarea id="message"></textarea>
+
+            <button type="submit" class="btn-primary">Enviar confirmación</button>
+        </form>
+
+        <p class="success-msg" id="successMsg">¡Gracias por confirmar! Nos vemos en la fiesta 🎉</p>
+    </section>
+
+    <section class="section special-mentions">
+      <h2 class="section-title">Menciones Especiales</h2>
+
+      <p class="section-text special-mentions-text">
+          Este evento no hubiera sido posible sin el amor, esfuerzo y dedicación de mis padres:
+          <br>
+          <strong>Carolina &amp; Ismael</strong>
+      </p>
+    </section>
+
+
+    <!-- GALERÍA -->
+    <section class="section gallery">
+        <h2 class="section-title">Galería</h2>
+
+        <div class="gallery-grid">
+            <img src="images/photo1.jpg" alt="Foto 1"> <!-- Ojo que esta esta en formato JPG en lugar de JPEG -->
+            <img src="images/photo2.jpeg" alt="Foto 2">
+            <img src="images/photo3.jpeg" alt="Foto 3">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Con cariño, Cata</p>
+    </footer>
+
+</body>
+</html>
